@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FCC - Survey Form</title>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 id="title">Lorem ipsum</h1>
+    </header>
+
+    <main>
+      <section>
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <form id="survey-form">
+
+          <div class="input-group">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+
+            <label id="number-label" for="number">Number</label>
+            <input id="number" type="number" min="0" max="10" placeholder="Enter a number between 0 and 10">
+
+            <select name="dropdown" id="dropdown">
+              <option disabled selected>Select a dropdown option</option>
+              <option value="dropdown1">Dropdown 1</option>
+              <option value="dropdown2">Dropdown 2</option>
+              <option value="dropdown3">Dropdown 3</option>
+            </select>
+          </div>
+
+          <fieldset id="radiobuttons" class="input-group">
+            <p>Select an option</p>
+            <label class="radio-label" for="radio-option1"><input id="radio-option1" class="input-radio" type="radio" name="radiobuttons" value="Value 1"> Option 1</label>
+            <label class="radio-label" for="radio-option2"><input id="radio-option2" class="input-radio" type="radio" name="radiobuttons" value="Value 2"> Option 2</label>
+            <label class="radio-label" for="radio-option3"><input id="radio-option3" class="input-radio" type="radio" name="radiobuttons" value="Value 3"> Option 3</label>
+          </fieldset>
+
+          <div class="input-group">
+            <p>Check all that apply</p>
+            <label class="checkbox-label" for="check1"><input id="check1" class="input-checkbox" type="checkbox" value="Check 1"> Check 1</label>
+            <label class="checkbox-label" for="check2"><input id="check2" class="input-checkbox" type="checkbox" value="Check 2"> Check 2</label>
+            <label class="checkbox-label" for="check3"><input id="check3" class="input-checkbox" type="checkbox" value="Check 3"> Check 3</label>
+          </div>
+
+          <div class="input-group">
+            <p>Comments and Suggestions</p>
+            <textarea class="input-textbox" placeholder="Enter your comments/suggestions"></textarea>
+          </div>
+
+          <input id="submit" class="input-submit" type="submit">
+
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div>&copy; 2020</div>
+    </footer>
+  </div>
+
+  </body>
+  </html>
